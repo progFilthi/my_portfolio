@@ -7,9 +7,9 @@ interface ContainerProps {
 
 export default function Container({ children }: ContainerProps) {
   return (
-    <div className="bg-[#353434] text-white min-h-screen">
+    <div className="bg-[#353434] text-white flex flex-col min-h-screen">
       <Navbar />
-      <main>{children}</main>
+      <main className="flex-1 mx-auto">{children}</main>
     </div>
   );
 }
