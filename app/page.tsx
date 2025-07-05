@@ -70,7 +70,9 @@ export default function page() {
           Tech Stack
         </h1>
       </div>
-      <Techstack />
+      <div className="my-8">
+        <Techstack />
+      </div>
     </div>
   );
 }
