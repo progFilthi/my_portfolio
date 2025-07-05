@@ -31,8 +31,8 @@ const icons = [
     alt: "Nextjs logo",
   },
   {
-    src: "/icons/Node.js.svg",
-    alt: "Nodejs logo",
+    src: "/icons/PostgresSQL.svg",
+    alt: "Postgresql logo",
   },
   {
     src: "/icons/Express.svg",
