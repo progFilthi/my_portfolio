@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="my-16">
       <form
         action=""
         className="border border-[#999797] rounded-2xl p-8 flex flex-col space-y-4 hover:bg-[#2c2c2c] transition-all duration-300"

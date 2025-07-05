@@ -70,7 +70,7 @@ const icons = [
 
 export default function Techstack() {
   return (
-    <div className="grid grid-cols-4 gap-4 p-4 border border-[#999797b6] rounded-xl place-items-center hover:bg-[#4A4A4A] transition-all duration-300">
+    <div className="grid grid-cols-4 gap-4 py-4 rounded-xl place-items-center hover:bg-[#4A4A4A] transition-all duration-300">
       {icons.map((icon, index) => (
         <Image
           key={index}

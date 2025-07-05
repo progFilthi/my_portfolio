@@ -35,7 +35,7 @@ export default function LinkIcons() {
     }
   };
   return (
-    <div className="mt-8 flex items-center space-x-2 text-3xl">
+    <div className="mt-8 flex text-white items-center space-x-2 text-3xl">
       {Icons.map((item, index) => (
         <item.Icon
           onClick={() => handleClick(item)}
