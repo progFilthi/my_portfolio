@@ -5,7 +5,7 @@ export default function Contact() {
     <div>
       <form
         action=""
-        className="border border-[#999797] rounded-2xl p-8 flex flex-col space-y-4"
+        className="border border-[#999797] rounded-2xl p-8 flex flex-col space-y-4 hover:bg-[#2c2c2c] transition-all duration-300"
       >
         <div className="flex items-center gap-4">
           <label className="font-semibold text-md">Name:</label>
@@ -26,7 +26,7 @@ export default function Contact() {
         {/* <label>Leave a message</label> */}
         <textarea
           placeholder="Leave a message ..."
-          className="border border-[#999797] rounded-2xl p-4 h-32 outline-none"
+          className="border border-[#999797] rounded-2xl p-4 h-32 outline-none resize-none"
         />
         <button
           type="button"
