@@ -1,3 +1,4 @@
+import Techstack from "@/Components/Techstack";
 import Projectcard from "@/Components/ui/Projectcard";
 import Image from "next/image";
 import React from "react";
@@ -64,6 +65,12 @@ export default function page() {
         <Projectcard />
         <Projectcard />
       </div>
+      <div>
+        <h1 className="text-center font-bold text-4xl mt-24 mb-8">
+          Tech Stack
+        </h1>
+      </div>
+      <Techstack />
     </div>
   );
 }

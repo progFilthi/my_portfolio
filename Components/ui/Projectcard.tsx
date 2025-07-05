@@ -18,14 +18,14 @@ export default function Projectcard() {
           <h3 className="font-bold text-lg py-2">DirtyBucket</h3>
 
           <div className="text-sm text-[#999797] tracking-tight">
-            <p>DirtyBucket is a modern platform for producers to sell and</p>
-            <p>showcase their beats with a clean UI and smooth user</p>
-            <p>experience.</p>
+            <p>A platform for producers to sell</p>
+            <p>showcase their beats with a clean UI</p>
+            <p>and smooth user experience.</p>
           </div>
 
-          <div className="self-start inline-flex items-center space-x-2 border border-[#999797] rounded-2xl px-3 py-1 mt-4 text-sm">
+          <div className="self-start inline-flex items-center space-x-2 border border-[#999797] rounded-2xl px-3 py-1 mt-3 text-sm hover:bg-[#4A4A4A] transition-all duration-300 cursor-pointer">
             <span>Check the code</span>
-            <IoLogoGithub />
+            <IoLogoGithub className="text-xl " />
           </div>
         </div>
       </div>
