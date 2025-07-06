@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -19,8 +20,9 @@ export default function Contact() {
     });
 
     const result = await res.json();
-    if (result.success) alert("Message sent!");
-    else alert("Something went wrong.");
+    if (result.success) {
+      toast.success("Message sent successfully!");
+    } else toast.error("Something went wrong!");
   };
 
   return (
