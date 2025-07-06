@@ -25,7 +25,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex items-center justify-center">
-      <ul className="inline-flex items-center justify-center py-2 px-6 space-x-8 border border-[#999797] rounded-3xl mt-8">
+      <ul className="inline-flex items-center justify-center py-2 px-6 space-x-4 border border-[#999797] rounded-xl mt-4">
         {Navlinks.map((navlink) => {
           const isActive = pathname === navlink.href;
           return (
