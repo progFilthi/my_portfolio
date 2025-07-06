@@ -2,7 +2,7 @@
 import React from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { HiDownload } from "react-icons/hi";
-import { IoLogoGithub } from "react-icons/io";
+import { IoLogoGithub, IoLogoYoutube } from "react-icons/io";
 const Icons = [
   {
     Icon: HiDownload,
@@ -15,6 +15,12 @@ const Icons = [
     type: "link",
     href: "https://www.linkedin.com/in/emmanuelfrancis0/",
     label: "LinkedIn",
+  },
+  {
+    Icon: IoLogoYoutube,
+    type: "link",
+    href: "https://www.youtube.com/@ProgammerFilthi/streams",
+    label: "Youtube",
   },
   {
     Icon: IoLogoGithub,
@@ -35,7 +41,7 @@ export default function LinkIcons() {
     }
   };
   return (
-    <div className="mt-8 flex text-white items-center space-x-2 text-3xl">
+    <div className="mt-8 flex text-white items-center space-x-4 text-3xl">
       {Icons.map((item, index) => (
         <item.Icon
           onClick={() => handleClick(item)}
