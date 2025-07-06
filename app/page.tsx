@@ -16,12 +16,12 @@ export default function page() {
           width={1170}
           className="rounded-full w-56 h-56 object-cover bg-[#5E5E5E]"
         />
-        <div className="text-[#999797] flex items-center justify-center flex-col space-y-1 mt-8 sm:mt-0">
+        <div className="text-[#999797] flex items-center justify-center flex-col leading-6 mt-4 sm:mt-0">
           <p className="text-[#CCCCCC]">Hey, there!</p>
-          <p className="text-[#CCCCCC] font-bold text-4xl">
+          <p className="text-[#CCCCCC] font-bold text-3xl sm:text-4xl">
             I am Emmanuel Francis
           </p>
-          <p className="font-semibold text-3xl">
+          <p className="font-semibold sm:text-3xl">
             Developer / Software Engineer
           </p>
           <p className="text-white">Based in Rwanda</p>
