@@ -26,10 +26,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="my-16">
+    <div id="#contact" className="my-16 scroll-mt-20">
       <form
         onSubmit={handleSubmit}
-        className="border border-[#999797] rounded-2xl p-8 flex flex-col space-y-4 hover:bg-[#2c2c2c] transition-all duration-300"
+        className="rounded-2xl p-8 flex flex-col space-y-4 hover:bg-[#2c2c2c] transition-all duration-300 shadow-amber-700 shadow"
       >
         <div className="flex items-center gap-4">
           <label className="font-semibold text-md">Name:</label>
@@ -37,7 +37,7 @@ export default function Contact() {
             name="name"
             type="text"
             placeholder="Name ..."
-            className="w-full px-4 py-2 outline-none border-[#999797] border rounded-md"
+            className="w-full px-4 py-2 outline outline-amber-900 rounded-md"
             onChange={handleChange}
           />
         </div>
@@ -47,14 +47,14 @@ export default function Contact() {
             name="email"
             type="text"
             placeholder="Email ..."
-            className="w-full px-4 py-2 outline-none border-[#999797] border rounded-md"
+            className="w-full px-4 py-2 outline outline-amber-900 rounded-md"
             onChange={handleChange}
           />
         </div>
         <textarea
           name="message"
           placeholder="Leave a message ..."
-          className="border border-[#999797] rounded-2xl p-4 h-32 outline-none resize-none"
+          className="rounded-2xl p-4 h-32 outline outline-amber-900 resize-none"
           onChange={handleChange}
         />
         <button

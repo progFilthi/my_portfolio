@@ -1,41 +1,32 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navlinks = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "Projects",
-    href: "/projects",
+    href: "#projects",
   },
   {
     label: "Tech stack",
-    href: "/tech-stack",
+    href: "#tech-stack",
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "#contact",
   },
 ];
 export default function Navbar() {
-  const pathname = usePathname();
   return (
     <nav className="flex items-center justify-center">
-      <ul className="inline-flex items-center justify-center py-2 px-6 space-x-4 border border-[#999797] rounded-xl mt-4">
+      <ul className="inline-flex items-center justify-center h-14 px-6 space-x-8 rounded-3xl mt-8 text-sm shadow shadow-amber-700">
         {Navlinks.map((navlink) => {
-          const isActive = pathname === navlink.href;
           return (
-            <li key={navlink.href}>
-              <Link
-                href={navlink.href}
-                className={`transition-colors duration-200 ${isActive ? "text-white" : "text-[#999797]"}`}
-              >
-                {navlink.label}
-              </Link>
+            <li
+              key={navlink.href}
+              className="hover:text-amber-500 transition-colors duration-300"
+            >
+              <Link href={navlink.href}>{navlink.label}</Link>
             </li>
           );
         })}
