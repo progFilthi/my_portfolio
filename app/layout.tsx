@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Container from "@/Container/Container";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Container> {children}</Container>
         <Toaster />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
